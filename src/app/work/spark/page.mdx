@@ -1,0 +1,63 @@
+import logo from '@/images/clients/spark/logomark-dark.svg'
+import imageHero from './hero.jpg'
+import imageNicole from './nicole-dandrea.png'
+
+export const caseStudy = {
+  client: 'Spark Strategies',
+  title: "Your studio's growth is our business.",
+  description:
+    'Spark Strategies are a team of Savvy Strategists, Marketing Minds & Industry Changemakers committed to helping boutique fitness business thrive.',
+  summary: [
+    'Spark Strategies helps boutique fitness studios implement effective growth strategies and marketing campaigns.',
+    'We developed a custom website and content management system to showcase their services and position them as thought leaders in the fitness industry.',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2023-01',
+  service: 'Web development, CMS',
+  testimonial: {
+    author: { name: "Nicole D'Andrea", role: 'Owner of Spark Strategies' },
+    content:
+      'Working with Studio, we felt more like a partner than a customer. They really resonated with our mission to help boutique fitness businesses thrive in a competitive market.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+As a leading consultant for boutique fitness studios, Spark Strategies approached us looking to build out their digital presence with a professional website and content hub.
+
+The website would serve as both a lead generation tool and a resource hub for fitness studio owners looking to grow their businesses. Because their reputation depended on having a premium digital presence, we focused on creating a fast, responsive site with excellent UX.
+
+We developed a custom content management system that allows them to easily publish new articles, case studies, and resources. The site architecture was designed to highlight their expertise and make it easy for potential clients to understand their services.
+
+To optimize their search traffic, we implemented an SEO strategy focused on industry-specific keywords and created content pillars around the core challenges faced by fitness studio owners.
+
+## What we did
+
+<TagList>
+  <TagListItem>Frontend (Next.js)</TagListItem>
+  <TagListItem>Custom CMS</TagListItem>
+  <TagListItem>SEO</TagListItem>
+  <TagListItem>Content Strategy</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: "Nicole D'Andrea", role: 'Owner of Spark Strategies' }}
+  image={{ src: imageNicole }}
+>
+  Working with Studio, we felt more like a partner than a customer. They really
+  resonated with our mission to help boutique fitness businesses thrive in a
+  competitive market.
+</Blockquote>
+
+<StatList>
+  <StatListItem value="120%" label="Traffic increase" />
+  <StatListItem value="3x" label="Lead generation" />
+  <StatListItem value="25%" label="Bounce rate reduction" />
+  <StatListItem value="45+" label="New clients" />
+</StatList>

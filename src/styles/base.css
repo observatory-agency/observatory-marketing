@@ -1,0 +1,13 @@
+html,
+body {
+  font-family: urbane, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.homepage-clients li:last-child {
+  width: 4rem;
+}
+
+.case-studies > div:last-child {
+  display: none;
+}
