@@ -7,3 +7,31 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+[[plugins.inputs]]
+  enable_cache = true
+
+[build.processing]
+  skip_processing = false
+
+[build.processing.css]
+  bundle = true
+  minify = true
+
+[build.processing.js]
+  bundle = true
+  minify = true
+
+[build.processing.html]
+  pretty_urls = true
+
+[build.processing.images]
+  compress = true
+
+# Specify files and directories to cache between builds
+[[redirects]]
+  from = "/_next/static/*"
+  to = "/_next/static/:splat"
+  status = 200
+  force = true
+  headers = {cache-control = "public, max-age=31536000, immutable"}

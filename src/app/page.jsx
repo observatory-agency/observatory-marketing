@@ -18,6 +18,7 @@ import logoSolarflux from '@/images/clients/solarflux/logo-light.svg'
 import logoLederick from '@/images/clients/lederick/logo-light.svg'
 import logoSimply from '@/images/clients/simply/logo-light.svg'
 import imageServices from '@/images/services.png'
+import nicoleImage from '@/app/work/spark/nicole-dandrea.png'
 
 import { loadCaseStudies } from '@/lib/mdx'
 
@@ -38,7 +39,7 @@ function Clients() {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We’ve worked with hundreds of amazing people
+            We've worked with hundreds of amazing people
           </h2>
           <div className="h-px flex-auto bg-brand-gray/80" />
         </FadeIn>
@@ -92,19 +93,19 @@ function Services() {
               Our team will design and develop a website that represents your
               business. We can incorporate your current branding, or start fresh
               for a full redesign. We create these sites with Jamstack
-              architecture, so they’ll scale with you.
+              architecture, so they'll scale with you.
             </ListItem>
             <ListItem title="Application development">
-              We’ll design and develop a progressive web app to add interaction
+              We'll design and develop a progressive web app to add interaction
               layers to your site. Build a searchable database, enable accounts
               and log ins, create portals for educational or task-based content,
               and more.
             </ListItem>
             <ListItem title="E-commerce">
               We work with Shopify, Stripe and Snipcart to build you an
-              e-commerce store that delivers. If you’re already set up and want
-              a better look or functionality, we got you. If you’re just jumping
-              in, we’ll cannonball in together.
+              e-commerce store that delivers. If you're already set up and want
+              a better look or functionality, we got you. If you're just jumping
+              in, we'll cannonball in together.
             </ListItem>
             <ListItem title="Custom content management">
               Update pages, publish posts, and manage digital assets without
@@ -127,8 +128,8 @@ function CaseStudies({ caseStudies }) {
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          We believe technology is the answer to the world’s greatest
-          challenges. It’s also the cause, so we find ourselves in bit of a
+          We believe technology is the answer to the world's greatest
+          challenges. It's also the cause, so we find ourselves in bit of a
           catch 22 situation.
         </p>
       </SectionIntro>
@@ -201,11 +202,15 @@ export default async function Home() {
 
       <Services />
 
+      <CaseStudies caseStudies={caseStudies} />
+
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Spark', logo: logoSparkDark }}
-        clientName="Nicole D'Andrea"
-        clientBusiness="Owner, Spark Strategies"
+        author={{
+          name: "Nicole D'Andrea",
+          role: 'Owner, Spark Strategies & Blackbird Yoga Studio',
+          image: nicoleImage,
+        }}
       >
         I could not have asked for a better experience than I had with Peter.
         From conception to completion, he hit every mark. My website is clean,
@@ -214,8 +219,6 @@ export default async function Home() {
         made himself available for questions, tweaks, and updates. I would
         recommend Peter to anyone.
       </Testimonial>
-
-      <CaseStudies caseStudies={caseStudies} />
 
       <ContactSection />
     </>

@@ -253,7 +253,7 @@ function RootLayoutInner({ children }) {
           <main className="w-full flex-auto">{children}</main>
 
           <Container as="footer" className="mt-12 w-full sm:mt-16 lg:mt-20">
-            <div className="mt-24 mb-12 flex flex-wrap items-center justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
+            <div className="mt-8 flex flex-wrap items-center justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10">
               <Link href="/" aria-label="Home">
                 <Logo className="w-44" fillOnHover />
               </Link>

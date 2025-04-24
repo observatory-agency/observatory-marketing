@@ -11,3 +11,19 @@ body {
 .case-studies > div:last-child {
   display: none;
 }
+
+.testimonial-image {
+  object-fit: cover;
+}
+
+@media screen and (min-width: 1280px) {
+    .testimonial-image {
+        position: absolute;
+        max-width: 384px;
+        height: 464px;
+        top: -1.5rem;
+        object-fit: cover;
+        border-bottom-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+}
