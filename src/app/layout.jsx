@@ -15,6 +15,11 @@ export default function Layout({ children }) {
     <html lang="en" className="h-full bg-brand-sand text-base antialiased">
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/zga8bhb.css" />
+        <script
+          defer
+          data-domain="observatory.team"
+          src="https://plausible.io/js/script.js"
+        ></script>
       </head>
       <body className="flex min-h-full flex-col">
         <RootLayout>{children}</RootLayout>
