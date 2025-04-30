@@ -11,7 +11,6 @@ import { PageIntro } from '@/components/PageIntro'
 import { Testimonial } from '@/components/Testimonial'
 import logoCraft from '@/images/clients/craft/logomark-dark.svg'
 import logoSparkDark from '@/images/clients/spark/logo-dark.svg'
-import logoSparkLight from '@/images/clients/spark/logo-light.svg'
 import logoBrandecation from '@/images/clients/brandecation/logo-light.svg'
 import logoSSGA from '@/images/clients/ssga/logo-light.svg'
 import logoSolarflux from '@/images/clients/solarflux/logo-light.svg'
@@ -154,7 +153,11 @@ export default async function Work() {
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Joe Veglatte', logo: logoBrandecation }}
+        author={{
+          name: 'Joe Veglatte',
+          role: 'CEO of Brandecation',
+          image: logoBrandecation,
+        }}
       >
         We approached <em>Studio</em> because we loved their past work. They
         delivered something remarkably similar in record time.

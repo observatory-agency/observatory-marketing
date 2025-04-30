@@ -19,7 +19,7 @@ export function Testimonial({ children, author, className }) {
   return (
     <div
       className={clsx(
-        'relative isolate bg-white pt-24 pb-16 sm:pt-32 sm:pb-24 xl:pb-32',
+        'relative isolate pt-24 pb-16 sm:pt-32 sm:pb-24 xl:pb-32',
         className,
       )}
     >
@@ -32,7 +32,7 @@ export function Testimonial({ children, author, className }) {
                 src={author.image}
                 fill
                 sizes="(min-width: 1280px) 24rem, (min-width: 768px) 40rem, 100vw"
-                className="absolute inset-0 size-full rounded-2xl bg-gray-800 object-cover shadow-2xl"
+                className="absolute inset-0 size-full rounded-2xl bg-gray-800 object-cover object-top shadow-2xl"
               />
             </div>
           </div>
